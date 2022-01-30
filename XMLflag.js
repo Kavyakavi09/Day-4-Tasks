@@ -7,7 +7,7 @@ request.send();
 request.onload =function(){
     if(request.status>=200 && request.status<300){
     var data = JSON.parse(request.response);
-   \\ console.log(data);
+   // console.log(data);
    for(var i=0;i<data.length;i++){
         console.log(`Country:${data[i].name}
 Flag:${data[i].flag}`);
